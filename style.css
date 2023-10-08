@@ -1,0 +1,229 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.logocodigo {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.service-Info {
+  padding-left: 280px;
+}
+.ul-nav {
+  display: flex;
+  flex-direction: row;
+}
+.navitem {
+  padding: 15px;
+  list-style-type: none;
+  color: #000000;
+}
+.navitem:hover {
+  color: #000000;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 800;
+}
+.navitem6 {
+  padding-left: 15px;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border-radius: 40px;
+  padding: 15px;
+  margin-top: 5px;
+  background-color: #3c2837;
+  color: white;
+}
+button:hover {
+  border-radius: 40px;
+  cursor: pointer;
+  padding: 17px;
+  margin-top: 5px;
+  background-color: #3c2837;
+  color: white;
+}
+.mainbox {
+  margin-top: 9.5rem;
+  margin-bottom: 3.125rem;
+  padding-left: 100px;
+}
+.title {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+}
+.title span {
+  color: #d5333e;
+}
+.description {
+  line-height: 1.5;
+  max-width: 40rem;
+}
+
+.footer-top h1 {
+  color: #d5333e;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 800;
+}
+.ul-foot {
+  display: flex;
+  flex-direction: row;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+}
+.hover-effect:hover {
+  color: #d5333e;
+  cursor: pointer;
+}
+.li-footitem {
+  list-style-type: none;
+  padding: 20px;
+}
+.vl {
+  border-left: 1px solid rgb(0, 0, 0);
+  height: 120px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 40px;
+}
+
+.footer-end {
+  font-size: 0.875rem;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.arrow-container {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.arrow {
+  width: 24px;
+  height: 24px;
+  padding-left: 10px;
+  transition: transform 2s ease;
+}
+
+.arrow-container:hover .arrow {
+  transform: translateX(20px);
+  cursor: pointer;
+}
+
+.circle-grid {
+  padding-left: 80px;
+  padding-right: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create a 3x3 grid */
+  gap: 80px; /* Adjust the gap between circles */
+  justify-items: center; /* Center the items horizontally */
+}
+
+.circle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;  
+
+}
+
+.circle {
+  width: 200px; /* Adjust the width of each circle */
+  height: 200px; /* Adjust the height of each circle */
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  transition: width 0.5s ease, height 0.5s ease;
+  position: relative;
+ 
+}
+#clr1{
+  background-color: rgb(255, 255, 101);
+  color: #000;
+}
+#clr2{
+  background-color: rgb(238, 217, 220);
+  color: #000;
+}
+#clr3{
+  background-color: rgb(179, 38, 46);
+  color: #fff;
+}
+#clr4{
+  background-color: rgb(25, 136, 232);
+  color: #fff;
+}
+#clr5{
+  background-color: rgb(255, 141, 110);
+  color: #000;
+}
+#clr6{
+  background-color: rgb(24, 161, 82);
+  color: #fff;
+}
+#clr7{
+  background-color: rgb(72, 50, 69);
+  color: #fff;
+}
+#clr8{
+  background-color: rgb(136, 57, 85);
+  color: #fff;
+}
+
+
+
+.circle .logo {
+  width: 150px; /* Adjust logo size */
+  height: 150px; /* Adjust logo size */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: bottom 0.5s ease; /* Add transition for logo */
+}
+.circle:hover .logo {
+  bottom: -150px; /* Move logo to the bottom on hover */
+  top: auto; /* Remove the top positioning */
+}
+
+.circle:hover {
+  width: 400px;
+  height: 400px;
+}
+
+.content {
+  display: none;
+  text-align: center;
+}
+
+.circle:hover .content {
+  display: block;
+}
+
+.content h2  {
+  margin: 5px 0;
+  font-size: 15px; /* Adjust label font size */
+}
+
+.content p {
+  font-size: 14px; /* Adjust description font size */
+}
